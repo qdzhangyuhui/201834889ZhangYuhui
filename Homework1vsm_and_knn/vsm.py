@@ -4,7 +4,18 @@ import nltk
 import re
 import string
 rootpath = '..\\datatest'
-
+for folderlists in os.listdir(rootpath):
+    print(folderlists)
+    path = os.path.join(rootpath, folderlists)
+    print(path)
+    for file in os.listdir(path):
+        print(file)
+        filepath = os.path.join(path,file)
+        if os.path.isfile(filepath):
+           with open(filepath, mode='r',encoding='latin-1') as f:
+               document = f.read()
+           f.close()
+           #print(document)
 def main():
    print()
 
