@@ -4,6 +4,7 @@ import nltk
 import re
 import string
 rootpath = '..\\datatest'
+#遍历文件夹
 for folderlists in os.listdir(rootpath):
     print(folderlists)
     path = os.path.join(rootpath, folderlists)
@@ -15,7 +16,11 @@ for folderlists in os.listdir(rootpath):
            with open(filepath, mode='r',encoding='latin-1') as f:
                document = f.read()
            f.close()
+           #tokenization
+           tokens = nltk.word_tokenize(document)
+           print(tokens)
            #print(document)
+
 def main():
    print()
 
