@@ -5,7 +5,7 @@ import re
 import string
 import math
 
-rootpath = '..\\datatest'
+rootpath = '..\\data'
 wordlist = []  # 维度表
 vectors = []  # 生产的文档向量集
 docs = []  # 存储处理好的文档内容集合
@@ -45,12 +45,13 @@ def creatvectors():
 def main():
     # 遍历文件夹进行预处理
     label = 1
+    print("data Processing")
     for folderlists in os.listdir(rootpath):
         # print(folderlists)
         path = os.path.join(rootpath, folderlists)
         # print(path)
         for file in os.listdir(path):
-            # print(file)
+            print('current file:'+file)
             doc = []  # 存储处理好的文档
             filepath = os.path.join(path, file)
             if os.path.isfile(filepath):  # 是文件的话读取文件内容
@@ -76,21 +77,19 @@ def main():
                 docs.append(doc)
         label += 1
     # print(docs)
-    # 生成维度表
+    # 输出维度表
     for word in wordlist:#过滤词频小于4的word
         idf,df=word_IDF(word)
         if df<4:
             wordlist.remove(word)
-
     with open('wordlist.txt', 'w', errors="ignore") as f:
         for w in wordlist:
             f.write(w + '\n')
     f.close()
     creatvectors()
-
-
 if __name__ == '__main__':
     main()
+    #输出向量表
     with open('vector.csv', 'w') as f:
         for v in vectors:
             for v1 in v:
