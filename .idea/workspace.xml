@@ -14,8 +14,8 @@
       <file leaf-file-name="vsm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/vsm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1028">
-              <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+            <state relative-caret-position="30">
+              <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
               <folding>
                 <element signature="e#15#24#0" expanded="true" />
               </folding>
@@ -26,29 +26,24 @@
       <file leaf-file-name="vector.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/vector.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+            <state relative-caret-position="60">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/README.md">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="knn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/knn.py">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="wordlist.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/wordlist.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="96852" column="4" lean-forward="true" selection-start-line="96852" selection-start-column="4" selection-end-line="96852" selection-end-column="4" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -69,6 +64,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Homework1vsm_and_knn/vsm.py" />
+        <option value="$PROJECT_DIR$/Homework1vsm_and_knn/README.md" />
       </list>
     </option>
   </component>
@@ -156,6 +152,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2489" y="0" width="1282" height="1016" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1650869" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -206,33 +203,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/word.txt" />
     <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/vector.txt" />
-    <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/wordlist.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="96852" column="4" lean-forward="true" selection-start-line="96852" selection-start-column="4" selection-end-line="96852" selection-end-column="4" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/knn.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/vector.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        <state relative-caret-position="60">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/vsm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1028">
-          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        <state relative-caret-position="30">
+          <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
           <folding>
             <element signature="e#15#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/wordlist.txt">
+    <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="96852" column="4" lean-forward="true" selection-start-line="96852" selection-start-column="4" selection-end-line="96852" selection-end-column="4" />
+        <state relative-caret-position="210">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
         </state>
       </provider>
     </entry>
