@@ -26,7 +26,7 @@ def word_IDF(word):
     for doc in docs:
         if word in set(doc):
             count = count + 1
-    return math.log(len(docs) / count)
+    return math.log(len(docs) / count), count
 
 
 def creatvectors():
@@ -35,10 +35,12 @@ def creatvectors():
         tflist = doc_word_TF(doc[0:-1])
         for word in doc[0:-1]:
             tf = tflist[word]
-            idf = word_IDF(word)
-            vector[wordlist.index(word)] = tf * idf
+            idf, df = word_IDF(word)
+            if df >= 4:
+                vector[wordlist.index(word)] = tf * idf
         vector.append(doc[-1])
         vectors.append(vector)
+
 
 def main():
     # 遍历文件夹进行预处理
@@ -52,7 +54,7 @@ def main():
             doc = []  # 存储处理好的文档
             filepath = os.path.join(path, file)
             if os.path.isfile(filepath):  # 是文件的话读取文件内容
-                with open(filepath, mode='r', encoding='latin-1') as f:
+                with open(filepath, mode='r', encoding='latin-1', errors="ignore") as f:
                     document = f.read()
                 f.close()
                 # 文件内容处理
@@ -68,14 +70,19 @@ def main():
                     token = stem.stem(token)  # Stemming
                     if token not in stopwords:  # 去重
                         doc.append(token)
-                        if token not in wordlist:  # 去停用词
+                        if token not in wordlist and token:  # 去停用词
                             wordlist.append(token)
                 doc.append(label)
                 docs.append(doc)
         label += 1
     # print(docs)
     # 生成维度表
-    with open('wordlist.txt', 'w') as f:
+    for word in wordlist:#过滤词频小于4的word
+        idf,df=word_IDF(word)
+        if df<4:
+            wordlist.remove(word)
+
+    with open('wordlist.txt', 'w', errors="ignore") as f:
         for w in wordlist:
             f.write(w + '\n')
     f.close()
