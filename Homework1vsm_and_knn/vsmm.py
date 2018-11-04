@@ -4,8 +4,9 @@ import nltk
 import re
 import string
 import math
+import pandas as pd
 
-rootpath = '..\\data'
+rootpath = '..\\datatest\\dataset'
 wordlist = []  # 维度表
 vectors = []  # 生产的文档向量集
 docs = []  # 存储处理好的文档内容集合
