@@ -104,7 +104,7 @@ def main():
     print('output wordlist')
     for word in wordlist:#过滤的word
         cf = countlist[word]
-        print(word,'df=',cf)
+        print(word,'cf=',cf)
         if cf > threshold_value_low and cf < threshold_value_high:
             #print(word,df)
             idf,df=word_IDF(word)
