@@ -11,7 +11,7 @@ wordlist = []  # 维度表
 vectors = []  # 生产的文档向量集
 docs = []  # 存储处理好的文档内容集合
 new_wordlist=[]
-threshold_value=50
+threshold_value=20
 def doc_word_TF(doc):
     doctf = {}
     for word in doc:
@@ -31,7 +31,7 @@ def word_IDF(word):
 
 
 def creatvectors():
-  with open('vector1.csv', 'w') as fi:
+  with open('vector2.csv', 'w') as fi:
     for doc in docs:
         vector = [0.0 for i in range(len(new_wordlist))]
         tflist = doc_word_TF(doc[0:-1])
@@ -40,7 +40,7 @@ def creatvectors():
             idf, df = word_IDF(word)
             if df > threshold_value:
                 vector[new_wordlist.index(word)] = tf * idf
-        vector.append(doc[-1])
+        vector.append(str(doc[-1]).replace(',',''))
         fi.write(str(vector) + ',')
         fi.write('\n')
         print(str(vector)+'\n')

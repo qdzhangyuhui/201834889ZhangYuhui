@@ -21,7 +21,8 @@ def loaddata(filepath):
             item = str(line).split(',')
             for i in range(len(item) - 1):
                 vector.append(float(item[i]))
-            label.append(str(item[len(item) - 1]).replace('\n', ''))
+            #print(str(item[len(item) - 2]))
+            label.append(str(item[len(item) - 2]).replace('\n', ''))
             vectors.append(vector)
             line = f.readline()
     return vectors, label
@@ -104,11 +105,12 @@ def classification(train, test, vectors, label, k):
 
 
 def main():
-    filepath = 'data/tfidf.csv'
+    filepath = 'vector1.csv'
     vectors, label = loaddata(filepath)
     train, test = dataset(label)
     print(train, '\n', test)
-    k = math.ceil(len(label)/80)
+    k = math.ceil(len(label)/55)
+   # k=20
     knn, ap = classification(train, test, vectors, label, k)
     print(knn)
     print(ap)
