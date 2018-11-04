@@ -14,8 +14,8 @@
       <file leaf-file-name="vsm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/vsm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4500">
-              <caret line="100" selection-start-line="100" selection-end-line="100" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="e#15#24#0" expanded="true" />
               </folding>
@@ -26,8 +26,8 @@
       <file leaf-file-name="vector.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/vector.csv">
           <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="96">
-              <caret line="1" column="837" selection-start-line="1" selection-start-column="837" selection-end-line="1" selection-end-column="837" />
+            <state relative-caret-position="45">
+              <caret line="33" column="32802" selection-start-line="33" selection-start-column="32802" selection-end-line="33" selection-end-column="32802" />
             </state>
           </provider>
         </entry>
@@ -44,8 +44,8 @@
       <file leaf-file-name="vector2.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/vector2.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state relative-caret-position="270">
+              <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -53,8 +53,8 @@
       <file leaf-file-name="knn.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/knn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="111" column="31" selection-start-line="111" selection-start-column="31" selection-end-line="111" selection-end-column="31" />
+            <state relative-caret-position="496">
+              <caret line="114" column="14" lean-forward="true" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -65,8 +65,8 @@
       <file leaf-file-name="vsmm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/vsmm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="105" selection-start-line="105" selection-end-line="105" />
+            <state>
+              <caret lean-forward="true" selection-end-line="125" />
               <folding>
                 <element signature="e#15#24#0" expanded="true" />
               </folding>
@@ -74,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wordlist1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/wordlist1.txt">
+      <file leaf-file-name="wordlist4.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/wordlist4.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="713" column="5" selection-start-line="713" selection-start-column="5" selection-end-line="713" selection-end-column="5" />
+            <state relative-caret-position="520">
+              <caret line="5875" selection-start-line="5875" selection-end-line="5875" />
             </state>
           </provider>
         </entry>
@@ -100,9 +100,12 @@
       <find>data/</find>
       <find>[</find>
       <find>,</find>
+      <find>'</find>
+      <find>dflist</find>
     </findStrings>
     <replaceStrings>
       <replace>docs[:-1]</replace>
+      <replace>countlist</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -113,17 +116,17 @@
       <list>
         <option value="$PROJECT_DIR$/Homework1vsm_and_knn/README.md" />
         <option value="$PROJECT_DIR$/Homework1vsm_and_knn/wordlist.txt" />
-        <option value="$PROJECT_DIR$/Homework1vsm_and_knn/vsm.py" />
         <option value="$PROJECT_DIR$/Homework1vsm_and_knn/vector1.csv" />
-        <option value="$PROJECT_DIR$/Homework1vsm_and_knn/vsmm.py" />
         <option value="$PROJECT_DIR$/Homework1vsm_and_knn/vector2.csv" />
         <option value="$PROJECT_DIR$/Homework1vsm_and_knn/knn.py" />
+        <option value="$PROJECT_DIR$/Homework1vsm_and_knn/vsmm.py" />
+        <option value="$PROJECT_DIR$/Homework1vsm_and_knn/vsm.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="450" />
-    <option name="y" value="83" />
+    <option name="x" value="275" />
+    <option name="y" value="77" />
     <option name="width" value="1470" />
     <option name="height" value="880" />
   </component>
@@ -260,7 +263,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500394" side_tool="true" weight="0.31937173" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2680851" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960598" visible="true" weight="0.37554586" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960598" visible="true" weight="0.30567685" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -334,51 +337,24 @@
     <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/worlist1.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/wordlist.txt">
+    <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="7130" selection-start-line="7130" selection-end-line="7130" />
+        <state relative-caret-position="90">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/vector1.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="5" column="1293" selection-start-line="5" selection-start-column="1293" selection-end-line="5" selection-end-column="1293" />
+          <caret line="46" column="10" lean-forward="true" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/wordlist1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="713" column="5" selection-start-line="713" selection-start-column="5" selection-end-line="713" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/vsm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4500">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-          <folding>
-            <element signature="e#15#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/vsmm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-          <folding>
-            <element signature="e#15#24#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3401" selection-start-line="3401" selection-end-line="3818" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -389,29 +365,77 @@
         </state>
       </provider>
       <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="96">
-          <caret line="1" column="837" selection-start-line="1" selection-start-column="837" selection-end-line="1" selection-end-column="837" />
+        <state relative-caret-position="45">
+          <caret line="33" column="32802" selection-start-line="33" selection-start-column="32802" selection-end-line="33" selection-end-column="32802" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/README.md">
+    <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/wordlist.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        <state relative-caret-position="456">
+          <caret line="7130" selection-start-line="7130" selection-end-line="7130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/vector1.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="3" column="97" selection-start-line="3" selection-start-column="97" selection-end-line="3" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/vector0.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="839" column="34" selection-start-line="839" selection-start-column="34" selection-end-line="839" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/wordlist2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32220">
+          <caret line="716" column="3" selection-start-line="716" selection-start-column="3" selection-end-line="716" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/vector2.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="270">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/vsm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#15#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/wordlist4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="5875" selection-start-line="5875" selection-end-line="5875" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/vsmm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="125" />
+          <folding>
+            <element signature="e#15#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Homework1vsm_and_knn/knn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="111" column="31" selection-start-line="111" selection-start-column="31" selection-end-line="111" selection-end-column="31" />
+        <state relative-caret-position="496">
+          <caret line="114" column="14" lean-forward="true" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

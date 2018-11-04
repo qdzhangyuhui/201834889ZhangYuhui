@@ -4,14 +4,20 @@ import nltk
 import re
 import string
 import math
+import pandas as pd
 
 rootpath = '..\\data'
-wordlist = []  # 维度表
+wordlist = []  # 所有单词表
 vectors = []  # 生产的文档向量集
 docs = []  # 存储处理好的文档内容集合
-new_wordlist=[]
-threshold_value=20
+dict=[]# 词典表
+threshold_value_low=30
+threshold_value_high=400
+idflist={}
+countlist={}
+
 def doc_word_TF(doc):
+    print('tf')
     doctf = {}
     for word in doc:
         if word not in doctf:
@@ -23,24 +29,30 @@ def doc_word_TF(doc):
 
 def word_IDF(word):
     count = 0
+    print('idf df')
     for doc in docs:
         if word in set(doc):
             count = count + 1
+    idf=math.log(len(docs) / count)
+    idflist[word]=idf
     return math.log(len(docs) / count), count
 
 
 def creatvectors():
-  with open('vector.csv', 'w') as fi:
+  with open('vector2.csv', 'w') as fi:
     for doc in docs:
-        vector = [0.0 for i in range(len(new_wordlist))]
+        vector = [0.0 for i in range(len(dict))]
         tflist = doc_word_TF(doc[0:-1])
         for word in doc[0:-1]:
+          if word in dict:
             tf = tflist[word]
-            idf, df = word_IDF(word)
-            if df > threshold_value:
-                vector[new_wordlist.index(word)] = tf * idf
-        vector.append(doc[-1])
-        fi.write(str(vector) + ',')
+            #df=countlist[word]
+            idf=idflist[word]
+            #print(word,'tf=',tf)
+            vector[dict.index(word)] = tf * idf
+        vector.append(str(doc[-1]))
+        strvector=str(vector).replace('[','')
+        fi.write(strvector.replace(']',''))
         fi.write('\n')
         print(str(vector)+'\n')
         #vectors.append(vector)
@@ -80,18 +92,27 @@ def main():
                         doc.append(token)#存储处理好的文章
                         if token not in wordlist:  # 去重
                             wordlist.append(token)
+                        if token not in countlist :
+                            countlist[token]=1
+                        else  :
+                            countlist[token]+=1
                 doc.append(label)#为文章打标签
                 docs.append(doc)
         label += 1#一个文件夹为一个标签
     # print(docs)
     # 过滤并输出输出维度表
     print('output wordlist')
-    for word in wordlist:#过滤DF小于20的word
-        idf, df = word_IDF(word)
-        if df > threshold_value:
-            new_wordlist.append(word)
-    with open('wordlist.txt', 'w', errors="ignore") as f:
-        for w in new_wordlist:
+    for word in wordlist:#过滤的word
+        cf = countlist[word]
+        print(word,'df=',cf)
+        if cf > threshold_value_low and cf < threshold_value_high:
+            #print(word,df)
+            idf,df=word_IDF(word)
+            print(word, 'idf=', idflist[word])
+            #countlist[word]=df
+            dict.append(word)
+    with open('wordlist4.txt', 'w', errors="ignore") as f:
+        for w in dict:
             f.write(w + '\n')
     f.close()
     print('output wordlist finish')
