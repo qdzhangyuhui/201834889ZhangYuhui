@@ -39,7 +39,7 @@ def word_IDF(word):
 
 
 def creatvectors():
-  with open('vector2.csv', 'w') as fi:
+  with open('..\\outdata\\vector0.csv', 'w') as fi:
     for doc in docs:
         vector = [0.0 for i in range(len(dict))]
         tflist = doc_word_TF(doc[0:-1])
@@ -111,7 +111,7 @@ def main():
             print(word, 'idf=', idflist[word])
             #countlist[word]=df
             dict.append(word)
-    with open('wordlist4.txt', 'w', errors="ignore") as f:
+    with open('..\\outdata\\wordlist0.txt', 'w', errors="ignore") as f:
         for w in dict:
             f.write(w + '\n')
     f.close()
