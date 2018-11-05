@@ -9,7 +9,7 @@ def load_data(path):
     #print(type(labels)	)
     return vec_train,labels
 def main():
-    print('knn')
+    print('knn hello~')
     vec_train,labels1 = load_data("vector.csv")
     vec_test,labels2 = load_data("vector7.csv")
     knn = neighbors.KNeighborsClassifier(n_neighbors=key, metric='euclidean')  # 取得knn分类器
