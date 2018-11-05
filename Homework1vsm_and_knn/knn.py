@@ -22,7 +22,7 @@ def loaddata(filepath):
             for i in range(len(item) - 1):
                 vector.append(float(item[i]))
             #print(str(item[len(item) - 2]))
-            label.append(str(item[len(item) - 2]).replace('\n', ''))
+            label.append(str(item[len(item) - 1]).replace('\n', ''))
             vectors.append(vector)
             line = f.readline()
     return vectors, label
@@ -59,22 +59,21 @@ def classification(train, test, vectors, label, k):
         for j in range(k):
             topk.append(Cosine(-1, -1))
         minj = 0
+        sum=0
+        for x in vectors[i]:
+            sum+=x
+        if sum==0 :
+            continue
         for j in train:
             dot = 0
-            ''' Cosine
-            '''
             modi = modj = 0
             for m in range(leng):
                 dot = dot + vectors[i][m]*vectors[j][m]
                 modi = modi + pow(vectors[i][m], 2)
                 modj = modj + pow(vectors[j][m], 2)
+            if modj==0 :
+                continue
             cosine = dot / (math.sqrt(modi) * math.sqrt(modj))
-            ''' Distance
-            ''''''
-            for m in range(leng):
-                dot = dot + pow(vectors[i][m] - vectors[j][m],2)
-            cosine = math.sqrt(dot)
-            '''
             cur = Cosine(j, cosine)
             flag = False
             for m in range(k):
@@ -105,12 +104,12 @@ def classification(train, test, vectors, label, k):
 
 
 def main():
-    filepath = 'vector1.csv'
+    filepath = 'vector7.csv'
     vectors, label = loaddata(filepath)
     train, test = dataset(label)
     print(train, '\n', test)
-    k = math.ceil(len(label)/55)
-   # k=20
+    #k = math.ceil(len(label)/1000)
+    k=200
     knn, ap = classification(train, test, vectors, label, k)
     print(knn)
     print(ap)
