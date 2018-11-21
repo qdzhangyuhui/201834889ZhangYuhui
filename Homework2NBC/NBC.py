@@ -5,7 +5,7 @@ import string
 import random
 from collections import Counter
 import numpy as np
-rootpath = '..\data'
+rootpath = 'test'
 docs = []#存储处理好的文档
 words = []#词汇表
 dict = [] #词典表(过滤后）
@@ -53,5 +53,6 @@ def dataprocessing(rootpath):
     print(words)
 def main():
     print('NBC')
+    dataprocessing(rootpath)
 if __name__ == '__main__':
     main()
