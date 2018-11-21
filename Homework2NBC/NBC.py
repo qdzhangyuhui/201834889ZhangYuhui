@@ -5,21 +5,24 @@ import string
 import random
 from collections import Counter
 import numpy as np
-rootpath = 'test'
+rootpath = '../data'
 docs = []#存储处理好的文档
 words = []#词汇表
 dict = [] #词典表(过滤后）
 labels = []
 countlist = {}
+threshold_value_low = 30
+threshold_value_high = 800
 def dataprocessing(rootpath):
     print('input data')
+    label = 1
     for folderlists in os.listdir(rootpath):
         # print(folderlists)
-        label = 1
         path = os.path.join(rootpath, folderlists)
         # print(path)
         for file in os.listdir(path):
-            print('current file:' + file)
+            slabel=str(label)
+            print(slabel+'current file:' + file)
             doc = []  # 存储处理好的文档
             filepath = os.path.join(path, file)
             if os.path.isfile(filepath):  # 是文件的话读取文件内容
@@ -49,8 +52,21 @@ def dataprocessing(rootpath):
                 labels.append(label)  # 为文章打标签
                 docs.append(doc)
         label += 1  # 一个文件夹为一个标签
-    print(docs)
-    print(words)
+    #print(docs)
+    #print(words)
+    print(labels)
+    for word in words:  # 过滤的word
+        cf = countlist[word]
+        print(word, 'cf=', cf)
+        if cf > threshold_value_low and cf < threshold_value_high:
+            dict.append(word)
+    with open('dict.txt', 'w', errors="ignore") as f:
+        for w in dict:
+            f.write(w + '\n')
+    f.close()
+    print('output wordlist finish')
+def train_naivebyes():
+    print()
 def main():
     print('NBC')
     dataprocessing(rootpath)
