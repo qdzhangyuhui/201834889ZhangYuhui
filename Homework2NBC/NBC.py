@@ -13,6 +13,13 @@ labels = []
 countlist = {}
 threshold_value_low = 30
 threshold_value_high = 800
+# 统计词频，并返回每一篇文档的所有单词的词频向量
+def tf(words, train):
+    vector = [0]*len(words)
+    for i in train:
+        if i in words:
+            vector[words.index(i)] += 1
+    return vector
 def dataprocessing(rootpath):
     print('input data')
     label = 1

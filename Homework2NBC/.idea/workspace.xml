@@ -34,8 +34,8 @@
       <file leaf-file-name="NBC.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NBC.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2429">
-              <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="298">
+              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -46,8 +46,8 @@
       <file leaf-file-name="dict.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dict.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289935">
-              <caret line="6443" lean-forward="true" selection-start-line="6443" selection-end-line="6443" />
+            <state relative-caret-position="-2915264">
+              <caret line="26742" lean-forward="true" selection-start-line="26742" selection-end-line="26742" />
             </state>
           </provider>
         </entry>
@@ -64,9 +64,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="98" />
-    <option name="y" value="42" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="7" />
+    <option name="y" value="-11" />
     <option name="width" value="1750" />
     <option name="height" value="968" />
   </component>
@@ -76,7 +76,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -88,10 +87,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/data recognization" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
@@ -145,18 +145,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-86" y="168" width="1750" height="968" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08650519" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.078125" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.038647342" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4235808" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -170,6 +171,23 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/NBC.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dict.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289935">
+          <caret line="6443" lean-forward="true" selection-start-line="6443" selection-end-line="6443" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/NBC.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -190,15 +208,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dict.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289935">
-          <caret line="6443" lean-forward="true" selection-start-line="6443" selection-end-line="6443" />
+        <state relative-caret-position="-2915264">
+          <caret line="26742" lean-forward="true" selection-start-line="26742" selection-end-line="26742" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NBC.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2429">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        <state relative-caret-position="298">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
