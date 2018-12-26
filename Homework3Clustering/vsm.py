@@ -76,21 +76,21 @@ def df(word, vectors):
 
 
 def main():
-    filepath = '..\\dataset\\Tweets.json'
+    filepath = 'Tweets.json'
     # 加载文档向量和标签
     vectors, label = loadfile(filepath)
     # 生成单词表
     wordtable = ctable(vectors)
-    with open('data/wordtable.txt', 'w') as f:
+    with open('wordtable.txt', 'w') as f:
         for i in wordtable:
             f.write(str(i)+'\n')
     print("save wordtable done.")
-    with open('data/tfidf.csv', 'w') as f:
+    with open('tfidf.csv', 'w') as f:
         f.write("")
     for doc in vectors:
         # 计算每篇文档的tfidf，并连同标签存放在tfidf.csv中
         tfidfvector = tfidf(doc, vectors, wordtable)
-        with open('data/tfidf.csv', 'a') as f:
+        with open('tfidf.csv', 'a') as f:
             for j in tfidfvector:
                 f.write(str(j) + ',')
             f.write(label[vectors.index(doc)]+'\n')

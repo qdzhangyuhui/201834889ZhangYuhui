@@ -84,7 +84,7 @@ def gaussian(X, y, k):
 
 
 def main():
-    filepath = 'data/tfidf.csv'
+    filepath = 'tfidf.csv'
     vectors, label = loaddata(filepath)
     X = np.array(vectors, dtype=float)
     y = np.array(label, dtype=int)
